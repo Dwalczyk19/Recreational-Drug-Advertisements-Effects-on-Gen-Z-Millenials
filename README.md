@@ -28,9 +28,7 @@ Do recreational drugs need to be advertised heavily?
 Do recreational drug advertisements make you more self-conscious about your recreational consumption/purchasing? (Whether your a consumer or not) 
 OPTIONAL: Given 4 different income intervals, please respond to your respective interval. If uncomfortable, answer with 0. (1)$0-74,999; (2) $75,000-$124,999; (3) $125,000-$200,000 (4) $200,000+
 
-Packages used in: 
-PYTHON
-Matplotlib 
-Pandas 
-Numpy 
-Seaborn 
+Packages used: 
+MATPLOTLIB 
+NUMPY 
+PANDAS
