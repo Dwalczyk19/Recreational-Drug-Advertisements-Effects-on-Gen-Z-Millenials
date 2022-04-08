@@ -76,9 +76,19 @@ def plot(uni):
     
     plt.show()
 
+def genderPlot(freq):
+    keys = list(freq.keys())
+    vals = list(freq.values())
     
+    plt.pie(vals, labels = keys, explode=[0,0.2,0], autopct="%1.1f%%")
+    plt.title("Gender Frequency")
+    plt.legend()
+    plt.show()
+
 def VisualEase(data,idx): 
     return data.loc[idx]
+
+
 
 
 if __name__ == "__main__":
@@ -95,6 +105,7 @@ if __name__ == "__main__":
     medianAge = data["age"].median()
     modeAge = data["age"].mode()
     
+  
     
     #2
     M = 0
@@ -112,7 +123,7 @@ if __name__ == "__main__":
                 else: 
                     genderFreq["N/A"] += 1
 
-    
+    #genderPlot(genderFreq)
     
     #3
     '''
@@ -181,9 +192,12 @@ if __name__ == "__main__":
                 middleVals[0] += 1
             elif a2[i] == "N": 
                 middleVals[1] += 1
-                
-    
-            
+        elif a4[i] == 1: 
+            if a2[i] == "Y": 
+                lowerVals[0] += 1
+            elif a2[i] == "N": 
+                lowerVals[0] == 1
+      
     
     #5 
     length = len(data)
@@ -217,5 +231,5 @@ if __name__ == "__main__":
                     universal["NYN"].append(ageRows[i])
                     
     
-    plot(universal)
+    #plot(universal)
     
